@@ -1,0 +1,164 @@
+/* Basic styles, customize as needed */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #A52A2A;
+}
+
+header {
+    background-color: #A52A2A;
+    color: #FFBF00;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+header {
+    position: relative; /* Ensure the header is positioned relative for absolute positioning */
+}
+
+.header-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.header-image-right,
+.header-image-left {
+    max-height: 100px; /* Adjust the height of the images */
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.header-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.header-image-right,
+.header-image-left {
+    max-height: 100px; /* Adjust the height of the images */
+}
+/* Styling for the welcome message */
+        .welcome-message {
+            background-color: #A52A2A;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+        .welcome-message h2 {
+            font-size: 24px;
+            color: #FFBF00;
+        }
+
+        .welcome-message p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+        }
+         .authorities-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Ensure items are centered in the container */
+        }
+
+        .authority {
+            width: 45%; /* Adjust width as needed */
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+        }
+
+        .authority img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .authority-details {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .authority {
+                width: 100%; /* Make each authority take full width on mobile */
+                text-align: center; /* Center align text on mobile */
+            }
+        }
